@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&amp;display=swap);
+
+.container-fluid {
+    margin-top: 200px;
+}
+
+.apex-charts {
+    min-height: 10px !important
+}
+
+.apex-charts text {
+    font-family: var(--bs-font-sans-serif) !important;
+    fill: #adb5bd
+}
+
+.apex-charts .apexcharts-canvas {
+    margin: 0 auto
+}
+
+.apexcharts-tooltip-text,
+.apexcharts-tooltip-title {
+    font-family: var(--bs-font-sans-serif) !important
+}
+
+.apexcharts-legend-series {
+    font-weight: 500
+}
+
+.apexcharts-gridline {
+    pointer-events: none;
+    stroke: #f8f9fa
+}
+
+.apexcharts-legend-text {
+    color: #74788d !important;
+    font-family: var(--bs-font-sans-serif) !important;
+    font-size: 13px !important
+}
+
+.apexcharts-pie-label {
+    fill: #fff !important
+}
+
+.apexcharts-xaxis text,
+.apexcharts-yaxis text {
+    font-family: var(--bs-font-sans-serif) !important;
+    fill: #adb5bd
+}

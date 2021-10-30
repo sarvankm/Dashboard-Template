@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+aside li, header i, .time-sec i, .chart-sec i {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+aside li:hover i, header i:hover, .time-sec i:hover, .chart-sec i:hover {
+    transform: scale(1.15);
+}
+
+header, .time-sec, .distance-speed-sec {
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/*sidebar*/
+
+aside {
+    flex-basis: 3.5%;
+    background-color: #606060;
+}
+
+aside ul {
+    padding-left: 0;
+}
+
+aside ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+aside ul li:first-child {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bx {
+    font-size: 20px;
+    color: white;
+}
+
+.bxs-arrow-to-left {
+    color: #ff6900;
+    font-size: 25px;
+}
+
+.main-side {
+    flex-basis: 96.5%;
+    background-color: #F4F4F4;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+header img {
+    width: 45.6px;
+    height: 45.6px;
+}
+
+header i {
+    font-size: 27px;
+    color: #55Dbff !important;
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container .notification-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FF0000;
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    right: 30px;
+}
+
+.search-container input {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    background-color: #F6F5F5;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+}
+
+.search-container input:focus {
+    box-shadow: none;
+    background: #F6F5F5;
+}
+
+.search-container input::placeholder {
+    color: #B1B0B0;
+    font-size: 13px;
+}
+
+.search-container .notification {
+    padding-right: 20px;
+    border-right: 1px solid #F6F5F5;
+}
+
+.search-container i {
+    padding: 0;
+    margin: 10px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* time-sec section */
+
+.time-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.time-sec p, .time-sec i {
+    margin: 30px 30px;
+}
+
+.time-sec p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.time-sec i {
+    color: #55Dbff;
+    font-size: 25px;
+}
+
+/* distance-speed section */
+
+.distance-speed-sec {
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.portion .bx-menu-alt-right {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.portion .bx-menu-alt-right:hover {
+    transform: translate(125px, -35px) scale(1.15);
+}
+
+.portion .bx {
+    font-size: 40px;
+    padding: 60px 30px;
+}
+
+.portion .bx-doughnut-chart {
+    color: #FF0000;
+}
+
+.portion .bx-home-circle {
+    color: #606060;
+    padding: 60px 15px;
+}
+
+.portion .bx-home-circle.second {
+    padding: 60px 0px;
+    padding-right: 15px;
+}
+
+.portion .bxs-car-garage {
+    color: #ff6900;
+    padding: 60px 35px;
+}
+
+.portion {
+    display: flex;
+    align-items: center;
+}
+
+.portion .bx-menu-alt-right {
+    padding: 0;
+    color: #606060;
+    font-size: 20px;
+    transform: translate(125px, -35px);
+}
+
+.count strong {
+    font-size: 25px;
+}
+
+.count span {
+    font-size: 10px;
+    color: gray;
+    margin-left: -3px;
+}
+
+.portion h2 {
+    font-size: 16px;
+}
+
+.line {
+    width: 2px;
+    height: 80%;
+    background-color: #D1D1D1;
+    transform: translateX(140px);
+}
+
+.fourth {
+    padding-right: 0;
+}
+
+/*report-sec*/
+
+.report-sec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.report-part {
+    background-color: white;
+    flex-basis: 40%;
+    margin-left: 10px;
+    border-top-right-radius: 80px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.report-sec ul {
+    padding: 35px 45px;
+    padding-bottom: 0;
+    height: 280px;
+    overflow-y: scroll;
+}
+
+.report-sec ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-sec ul li:hover {
+    background: #F8F9FA;
+}
+
+.report-sec ul li:not(:last-child) {
+    border-bottom: 1px solid #B1B0B0;
+}
+
+.report-sec ul li:not(:first-child) {
+    margin-top: 5px;
+}
+
+.report-sec ul li button {
+    border: none;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+}
+
+.report-sec li i {
+    padding: 10px;
+    padding-left: 2px;
+}
+
+.report-sec h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.danger {
+    color: #FF0000;
+}
+
+.warning {
+    color: #ff6900;
+}
+
+.success {
+    color: #008000;
+}
+
+.primary {
+    color: #606060;
+}
+
+.report-part .bxs-report, .bx-bell {
+    font-size: 25px;
+}
+
+.report-sec p {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    padding-bottom: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D1D1D1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*assessment part*/
+
+.assessment-part {
+    flex-basis: 13%;
+    background: white;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.assessment-part i {
+    font-size: 150px;
+}
+
+/* notification-part */
+
+.report-part.notification {
+    border-top-right-radius: 0;
+    border-top-left-radius: 80px;
+}
+
+.report-part.notification h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -20px;
+    color: #606060;
+}
+
+.report-part.notification {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.container-fluid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-body {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 50px;
+}
+
+.card {
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.card-body i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #606060;
+}
